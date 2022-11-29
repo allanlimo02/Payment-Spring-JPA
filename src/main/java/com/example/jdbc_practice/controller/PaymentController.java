@@ -27,14 +27,13 @@ public class PaymentController {
 
     @RequestMapping("/getpayments")
     public List <Payment> getPayments(@RequestBody List <Payment> payments ){
-        return paymentService.getPayments(payments);
+        return paymentService.getPayments();
     }
 
     @RequestMapping("/getPaymentById/{id}")
     public Payment getPaymentById(@PathVariable int id){
         return paymentService.getPaymentById(id);
     }
-
 
     @PutMapping("/update")
     public Payment updatePayment(Payment payment){

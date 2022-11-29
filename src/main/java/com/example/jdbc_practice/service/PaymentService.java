@@ -23,7 +23,7 @@ public class PaymentService {
         return paymentRepo.saveAll(payments);
     }
     // List all Payment
-    public List <Payment> getPayments(List <Payment> payment){
+    public List <Payment> getPayments(){
         return paymentRepo.findAll();
     }
     //List payments by ID
