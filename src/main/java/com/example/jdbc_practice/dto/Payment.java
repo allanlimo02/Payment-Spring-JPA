@@ -13,13 +13,13 @@ import javax.persistence.Table;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table
+@Table(name = "payment")
 public class Payment {
 
     @Id
     @GeneratedValue
     public int transactionId;
-    public Long msisdn;
+    public String msisdn;
     public String payerClientName;
     public String currencyCode;
     public Integer amountPaid;
